@@ -1,0 +1,573 @@
+---
+---
+
+
+// Color Palattes
+$blue: #a1eafb;
+$white:#fdfdfd;
+$pink: #ffcef3;
+$purple: #cabbe9;
+
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+* {
+    font-family: 'Noto Sans TC';
+}
+
+body {
+
+	position: relative;
+	background-color: #f2eae1;
+	font-size: 15px;
+}
+ // ==== Call to action button ====
+.call-to-action-btn {
+	position: fixed;
+	text-align: center;
+	width: 100px;
+	margin-left: -50px;
+	left: 50%;
+	bottom: 10px;
+}
+
+// ====
+
+body > header {
+	position: relative;
+	height:100vh;
+	text-align: center;
+	padding:10px 0;
+	color: #8b8884;
+	.container {
+		position:absolute;
+		top:40%;
+		margin-top:-50%;
+	}
+	#logo { height:200px; }
+	.desc_context {
+		text-align: left;
+		text-indent: 2em;
+	}
+	.contact_info {
+		text-align: left;
+		color: #8b8884;
+		.header{
+			width:100%;
+			color: #8b8884;
+			text-align: left;
+			padding:0;
+
+		}
+	}
+}
+
+#product {
+	position: relative;
+	width: 100%;
+	margin: 3em 0;
+	.row {
+		margin: 0;
+	}
+	.header {
+		text-align: center;
+		font-size:2em;
+		padding:0;
+		img {
+			width: 80vw;
+		}
+	}
+	img {
+		width: 100%;
+	}
+}
+
+#advantages {
+	header{
+		width:70%;
+		margin: 0 auto;
+		img {
+			width: 100%;
+		}
+	}
+	section {
+		position: relative;
+		background-color: white;
+
+		overflow: hidden;
+		text-align: center;
+		padding: 40px 0;
+		height: 100vh;
+		.bg {
+			position: absolute;
+			height: 100%;
+			left:0;
+			top:0;
+			margin: 0 auto;
+			opacity: 0.3;
+			// centered
+			margin-left: 50%;
+  		/* Move to the left by 50% of own width */
+  		transform: translateX(-50%);
+		}
+		// for ScrollMagic
+	}
+	header{
+		position: relative;
+		z-index: 0;
+	}
+	.desc_context {
+		position: relative;
+		text-align: center;
+		z-index: 0;
+	}
+}
+
+#referral {
+
+	background-color: #f2eae1;
+	position: relative;
+	width: 100%;
+	margin-top: 3em;
+	padding: 3em 0;
+	.row {
+		margin: 0;
+	}
+	header {
+		text-align: center;
+		font-size:2em;
+		padding:0;
+		img {
+			width: 45vw;
+		}
+	}
+	section{
+		margin-top: 1em;
+	}
+	.avatar{
+		width:100%;
+		img { width: 100%; border-radius:50%;}
+	}
+	.desc_context{
+		.name { margin-bottom: 10px; }
+		.chat-box{
+			background-color: white;
+			border-radius: 0 30px 30px 30px;
+			padding: 10px;
+		}
+	}
+}
+
+#buying-block {
+	position: relative;
+	margin-top:20px;
+	background-color: $purple;
+	z-index:1;
+	padding: 1em 0 10em 0;
+	header{
+		z-index:2;
+		width:100%;
+		text-align: center;
+		#buying-head-top-container { z-index: 100;}
+		#buying-head-top {
+			margin-top: 20px;
+			width:80vw;
+			z-index:100;
+		}
+		#buying-head-bot {
+			margin-top: -20px;
+			width: 65vw;
+		}
+	}
+	// Package cards
+	section.card {
+		background-color: white;
+		width: 80%;
+		border-radius: 5px;
+		margin: 50px auto 0;
+		// box-shadow: 5px 5px 5px #333;
+		box-shadow: 5px 5px rgba(157, 142, 155, 0.4),
+              10px 10px rgba(157, 142, 155, 0.3),
+              15px 15px rgba(157, 142, 155, 0.2),
+              20px 20px rgba(157, 142, 155, 0.1),
+              25px 25px rgba(157, 142, 155 ,0.05);
+		header{ 
+			padding: 0.1em 0;
+			p {
+				color: #999999;
+				margin-top: 0;
+			}
+			h1 {
+				margin: 0.5em 0 0 0;
+			}
+		}
+		.product-img-container {
+			width: 100%;
+			text-align: center;
+			margin-top: 20px;
+
+			img{
+				max-width:80%;
+				max-height:250px;
+				height: auto;
+				width: auto;
+			}
+		}
+		hr {  border-top: 1px solid #ddd; }
+		.desc-content {
+			padding: 0.5em;
+			.title {
+				text-align: right;
+				color: #999;
+				font-size: 1em;
+			}
+			.content-row {
+				margin-top: 1em;
+				.content {
+					font-size: 1em;
+					ul {
+						list-style: none;
+						padding: 0;
+						margin: 0;
+					}
+				}
+			}
+			.highlight {
+				.title {
+					color: #222;
+					font-size: 1em;
+				}
+				.content{
+					color: #ff5f5c;
+					font-size: 1.5em;
+					line-height: 50px;
+					vertical-align: 150px;
+				}
+			}
+		}
+		.btn {
+			text-align: center;
+			width: 100px;
+			margin: 1em auto;
+		}
+	}
+}
+
+#buying-info {
+	position: fixed;
+	left:50vw;
+	margin-left: -40%;
+	top:100px;
+	background-color: $white;
+	padding: 20px;
+	width: 80%;
+	box-shadow: 1px 1px 10px #000;
+	z-index:101;
+	border-radius: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
+	&.display {
+		visibility: visible;
+  	opacity: 1;
+		transition: all 0.3s ease;
+	}
+	#closebtn {
+		float: right;
+		position: absolute;
+		top:10px;
+		right:10px;
+		height: 25px;
+		width:25px;
+	}
+	#closebtn:after {
+	  display: inline-block;
+	  content: "\00d7"; /* This will render the 'X' */
+	  font-size: 1.5em;
+	  text-align: center;
+	  width:100%;
+	  line-height: 25px;
+	}
+	#closebtn:hover {
+		background-color:#eee;
+	}
+}
+
+#common-question {
+	padding: 0 10px;
+	header {
+		text-align: center;
+		font-size:2em;
+		padding:0;
+		margin-top: .67em;
+		img {
+			width: 45vw;
+		}
+	}
+	h1{
+		font-weight: 1;
+		padding:5px 10px;
+		text-align: justify;
+		background-color: $blue;
+		font-size: 1.5em;
+	}
+	p {
+		span {
+			background-color: rgba(255,255,9,0.4);
+		}
+	}
+}
+
+footer {
+	position: relative;
+	background-color: #2a2a2a;
+	padding: 1em 1em .5em;
+	color: #f2f2f2;
+	z-index: 101;
+	h1 {
+		margin: 0;
+	}
+	a {
+		color: $blue;
+		&:visited {
+			color: $blue;
+		}
+	}
+	span {
+		vertical-align: middle;
+	}
+	i {
+		font-size: 2em;
+		vertical-align: middle;
+		margin: .3em .3em;
+		width: 30px;
+		text-align: center;
+	}
+}
+#copyright {
+	text-align: center;
+	font-size: .8em;
+
+}
+
+
+//================ Scroll down animate ================
+
+
+.scroll-btn {
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 100px;
+	text-align: center;
+}
+
+.scroll-btn p {
+  margin-left: -55px;
+}
+
+.scroll-btn > * {
+	display: inline-block;
+	line-height: 18px;
+	font-size: 13px;
+	font-weight: normal;
+	color: #222;
+	color: #222;
+	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: 2px;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *.active {
+	color: #222;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.scroll-btn .mouse {
+	position: relative;
+	display: block;
+	width: 35px;
+	height: 55px;
+	margin: 0 auto 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 3px solid #222;
+	border-radius: 23px;
+}
+.scroll-btn .mouse > * {
+	position: absolute;
+	display: block;
+	top: 29%;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	margin: -4px 0 0 -4px;
+	background: #222;
+	border-radius: 50%;
+	-webkit-animation: ani-mouse 2.5s linear infinite;
+	-moz-animation: ani-mouse 2.5s linear infinite;
+	animation: ani-mouse 2.5s linear infinite;
+}
+
+@-webkit-keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@-moz-keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+// ===========================================================
+
+//================ Fixed Button ================
+$color-grey: #666;
+$color-black: #000;
+$stripe-height: 7px;
+$btn-color: $color-grey;
+$btn-background: #fff;
+$btn-color-hover: #fff;
+$btn-background-hover: $color-grey;
+$border-color: $color-grey;
+$border-color-hover: $color-black;
+
+@mixin reset-button {
+    overflow : visible;
+    margin : 0;
+    padding : 0;
+    border : 0;
+    background : transparent;
+    font : inherit;
+    line-height : normal;
+    cursor : pointer;
+    -moz-user-select : text;
+
+    &::-moz-focus-inner {
+        padding : 0;
+        border : 0;
+    }
+}
+
+@keyframes stripe-slide {
+    0% { background-position: 0% 0; }
+    100% { background-position: 100% 0; }
+}
+
+
+.btn {
+    @include reset-button;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 0px 18px;
+    background-color: $btn-background;
+    color: $btn-color;
+    border: 2px solid $border-color;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    transition: all .5s ease;
+    
+    &--stripe {
+        overflow: hidden;
+        position: relative;
+        
+        &:after {
+            content: '';
+            display: block;
+            height: $stripe-height;
+            width: 100%;
+            background-image: repeating-linear-gradient(
+                45deg,
+                $border-color,
+                $border-color 1px,
+                transparent 2px,
+                transparent 5px
+            );
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-top: 1px solid $border-color;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-size: $stripe-height $stripe-height;
+        }
+
+        &:hover {
+            background-color: $btn-background-hover;
+            color: $btn-color-hover;
+            border-color: $border-color-hover;
+
+            &:after {
+                background-image: repeating-linear-gradient(
+                    45deg,
+                    $btn-color-hover,
+                    $btn-color-hover 1px,
+                    transparent 2px,
+                    transparent 5px
+                );
+                border-top: 1px solid $border-color-hover;
+                animation: stripe-slide 12s infinite linear forwards;
+            }
+        }
+    }
+    
+    &--large {
+        width: 50%;
+    }
+    
+    &--radius {
+        border-radius: 36px;
+    }
+}
+//================ Fixed Button End ================
+
