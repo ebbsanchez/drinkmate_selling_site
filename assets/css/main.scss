@@ -32,7 +32,9 @@ body {
 	left: 50%;
 	bottom: 10px;
 }
-
+span.highlight{
+	background-color: rgba(255,255,9,0.4);
+}
 // ====
 
 body > header {
@@ -133,7 +135,7 @@ body > header {
 	margin-top: 3em;
 	padding: 3em 0;
 	.row {
-		margin: 0;
+		margin: 2em 0 0 ;
 	}
 	header {
 		text-align: center;
@@ -143,9 +145,7 @@ body > header {
 			width: 45vw;
 		}
 	}
-	section{
-		margin-top: 1em;
-	}
+
 	.avatar{
 		width:100%;
 		img { width: 100%; border-radius:50%;}
@@ -293,6 +293,9 @@ body > header {
 	#closebtn:hover {
 		background-color:#eee;
 	}
+	span {
+			background-color: rgba(255,255,9,0.4);
+		}
 }
 
 #common-question {
