@@ -158,6 +158,18 @@ body > header {
 			padding: 10px;
 		}
 	}
+	.more {
+		font-size: 1.5em;
+		text-align: center;
+		border: 1px solid #000;
+		padding: 1em;
+		margin-top: 2em;
+		font-weight: lighter;
+		span.small {
+			font-size: 1em;
+
+		}
+	}
 }
 
 #buying-block {
